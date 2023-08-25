@@ -67,6 +67,24 @@ blocks:
     coordinate: [104, 268.0]
     rotation: 0
     state: true
+- name: blocks_add_const_vxx_0
+  id: blocks_add_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: '.6'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [488, 492.0]
+    rotation: 0
+    state: true
 - name: qtgui_time_sink_x_0
   id: qtgui_time_sink_x
   parameters:
@@ -161,7 +179,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [776, 308.0]
+    coordinate: [1080, 308.0]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_0
@@ -181,13 +199,14 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [456, 452.0]
+    coordinate: [768, 468.0]
     rotation: 0
     state: true
 
 connections:
+- [analog_sig_source_x_0, '0', blocks_add_const_vxx_0, '0']
 - [analog_sig_source_x_0, '0', qtgui_time_sink_x_0, '0']
-- [analog_sig_source_x_0, '0', rational_resampler_xxx_0, '0']
+- [blocks_add_const_vxx_0, '0', rational_resampler_xxx_0, '0']
 - [rational_resampler_xxx_0, '0', qtgui_time_sink_x_0, '1']
 
 metadata:
