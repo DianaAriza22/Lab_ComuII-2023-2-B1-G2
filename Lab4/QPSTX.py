@@ -6,7 +6,7 @@
 #
 # GNU Radio Python Flow Graph
 # Title: Not titled yet
-# GNU Radio version: 3.10.5.1
+# GNU Radio version: 3.10.1.1
 
 from packaging.version import Version as StrictVersion
 
@@ -97,7 +97,6 @@ class QPSTX(gr.top_block, Qt.QWidget):
         ##################################################
         # Blocks
         ##################################################
-
         self.Menu = Qt.QTabWidget()
         self.Menu_widget_0 = Qt.QWidget()
         self.Menu_layout_0 = Qt.QBoxLayout(Qt.QBoxLayout.TopToBottom, self.Menu_widget_0)
@@ -230,7 +229,7 @@ class QPSTX(gr.top_block, Qt.QWidget):
             None # parent
         )
         self.qtgui_freq_sink_x_0_0.set_update_time(0.10)
-        self.qtgui_freq_sink_x_0_0.set_y_axis((-140), 10)
+        self.qtgui_freq_sink_x_0_0.set_y_axis(-140, 10)
         self.qtgui_freq_sink_x_0_0.set_y_label('Relative Gain', 'dB')
         self.qtgui_freq_sink_x_0_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, 0.0, 0, "")
         self.qtgui_freq_sink_x_0_0.enable_autoscale(False)
@@ -276,7 +275,7 @@ class QPSTX(gr.top_block, Qt.QWidget):
             None # parent
         )
         self.qtgui_freq_sink_x_0.set_update_time(0.10)
-        self.qtgui_freq_sink_x_0.set_y_axis((-140), 10)
+        self.qtgui_freq_sink_x_0.set_y_axis(-140, 10)
         self.qtgui_freq_sink_x_0.set_y_label('Relative Gain', 'dB')
         self.qtgui_freq_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, 0.0, 0, "")
         self.qtgui_freq_sink_x_0.enable_autoscale(False)
@@ -319,8 +318,8 @@ class QPSTX(gr.top_block, Qt.QWidget):
             None # parent
         )
         self.qtgui_const_sink_x_0_0.set_update_time(0.10)
-        self.qtgui_const_sink_x_0_0.set_y_axis((-2), 2)
-        self.qtgui_const_sink_x_0_0.set_x_axis((-2), 2)
+        self.qtgui_const_sink_x_0_0.set_y_axis(-2, 2)
+        self.qtgui_const_sink_x_0_0.set_x_axis(-2, 2)
         self.qtgui_const_sink_x_0_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, "")
         self.qtgui_const_sink_x_0_0.enable_autoscale(False)
         self.qtgui_const_sink_x_0_0.enable_grid(False)
@@ -364,8 +363,8 @@ class QPSTX(gr.top_block, Qt.QWidget):
             None # parent
         )
         self.qtgui_const_sink_x_0.set_update_time(0.10)
-        self.qtgui_const_sink_x_0.set_y_axis((-2), 2)
-        self.qtgui_const_sink_x_0.set_x_axis((-2), 2)
+        self.qtgui_const_sink_x_0.set_y_axis(-2, 2)
+        self.qtgui_const_sink_x_0.set_x_axis(-2, 2)
         self.qtgui_const_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, "")
         self.qtgui_const_sink_x_0.enable_autoscale(False)
         self.qtgui_const_sink_x_0.enable_grid(False)
